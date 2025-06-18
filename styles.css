@@ -129,7 +129,7 @@ h2 {
 }
 
 .welcome>p {
-  color: #bbb;
+  color: white;
   font-size: 1.5rem;
 }
 
@@ -209,7 +209,7 @@ ul {
   margin: 1.8rem -1rem;
   text-align: left;
   font-size: 1rem;
-  /* background-color: #bbb; */
+  /* background-color: white; */
   box-shadow: 0px 0px 5px 4px white;
 }
 
@@ -229,7 +229,7 @@ ul {
   margin: 1rem 2%;
   padding: 0 2%;
   padding-top: 1.5rem;
-  border-top: 1px solid #bbb;
+  border-top: 1px solid white;
 }
 
 .project-tile > p {
@@ -305,7 +305,7 @@ footer {
   text-align: center;
   font-weight: bold;
   font-size: 1.8rem;
-  background-color: #bbb;
+  background-color: white;
   padding-top: 2rem;
   border-top: 1px solid #f284ad;
 }
