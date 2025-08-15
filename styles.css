@@ -83,6 +83,10 @@ h2 {
   background-color: #ddd;    
   width:100%;
   border-bottom: 1px solid #e891af;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
 /* Navbar links */
@@ -349,6 +353,15 @@ footer {
 
 address {
   font-style: normal;
+}
+
+.site-title {
+  color: #5e17eb;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 2rem;
+  margin-left: 1.5rem;
+  align-self: center;
 }
 
 /* Setting up media queries for screen size responsiveness */
