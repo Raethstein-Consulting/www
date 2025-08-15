@@ -110,17 +110,20 @@ h2 {
 
 #welcome-section {
   width: 100vw;
-  height: 50vh;
-  min-height: 400px;
+  aspect-ratio: 16 / 9;
+  min-height: 300px;
   background: url('/Bryleigh-072225-Banner-pink-web.jpg') no-repeat center center;
-  background-size: cover;
+  background-size: contain;
+  background-color: #e891af; /* fallback color */
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
 }
 
 .welcome {
-  background: rgba(255,255,255,0.85); /* Optional: adds a white overlay for readability */
+  background: rgba(255,255,255,0.85);
   padding: 2rem 3rem;
   width: 33vw;
   min-width: 320px;
@@ -129,6 +132,10 @@ h2 {
   border-radius: 1rem;
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
   text-align: right;
+  position: absolute;
+  right: 5vw;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .welcome>hr {
@@ -388,12 +395,4 @@ address {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  html {
-    font-size: 100% !important;
-  }
-  
-  body {
-    font-size: 2rem;
-  }
-}
+@media only screen and
