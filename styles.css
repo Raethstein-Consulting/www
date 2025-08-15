@@ -310,6 +310,10 @@ footer {
   border-top: 1px solid #e891af;
 }
 
+address {
+  font-style: normal;
+}
+
 /* Setting up media queries for screen size responsiveness */
 
 @media screen and (max-width: 910px) {
