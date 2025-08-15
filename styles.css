@@ -122,20 +122,35 @@ h2 {
   overflow: hidden;
 }
 
+.banner-wrapper {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  margin-top: 5rem; /* adjust to match navbar height */
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100vw;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  aspect-ratio: 16 / 9;
+}
+
 .welcome {
+  position: absolute;
+  top: 50%;
+  right: 5vw;
+  transform: translateY(-50%);
   background: rgba(255,255,255,0.85);
   padding: 2rem 3rem;
   width: 33vw;
-  min-width: 320px;
+  min-width: 220px;
   max-width: 500px;
-  margin-right: 5vw;
   border-radius: 1rem;
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
   text-align: right;
-  position: absolute;
-  right: 5vw;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .welcome>hr {
@@ -395,4 +410,12 @@ address {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 100% !important;
+  }
+  
+  body {
+    font-size: 1.8rem;
+  }
+}
