@@ -420,3 +420,8 @@ main, .content, #contact, .reviews-socials {
   margin: 0;
   background: none;
 }
+
+.navbar-spacer {
+  height: 4.5rem; /* Same as .topnav height */
+  width: 100%;
+}
