@@ -264,7 +264,7 @@ ul {
 .contact {
   text-align: center;
   margin-top: 3rem;
-  margin-bottom: 33vh;
+  margin-bottom: 2rem; /* Reduce or remove large bottom margin */
 }
 
 .contact-me {
@@ -273,6 +273,10 @@ ul {
 
 .contact-me:hover {
   color: #F0E68C;
+}
+
+.reviews-socials {
+  margin-bottom: 33vh; /* Add large bottom margin here */
 }
 
 .testimonials {
