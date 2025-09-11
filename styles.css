@@ -355,6 +355,9 @@ address {
   .about {
     padding: 2rem 2rem;
   }
+  #welcome-section {
+    margin-top: 4.5rem; /* Adjust this value to match your mobile navbar height */
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
