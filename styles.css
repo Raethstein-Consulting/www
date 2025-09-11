@@ -356,7 +356,8 @@ address {
     padding: 2rem 2rem;
   }
   #welcome-section {
-    margin-top: 10rem; /* Adjust this value to match your mobile navbar height */
+    padding-top: 4.5rem; /* Adjust to match your navbar height */
+    margin-top: 0;
   }
 }
 
@@ -368,9 +369,11 @@ address {
   body {
     font-size: 2rem;
   }
-   #welcome-section {
-    margin-top: 10rem; /* Adjust this value to match your mobile navbar height */
+  #welcome-section {
+    padding-top: 4.5rem; /* Adjust to match your navbar height */
+    margin-top: 0;
   }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -382,8 +385,9 @@ address {
   body {
     font-size: 1.4rem;
   }
-   #welcome-section {
-    margin-top: 10rem; /* Adjust this value to match your mobile navbar height */
+  #welcome-section {
+    padding-top: 4.5rem; /* Adjust to match your navbar height */
+    margin-top: 0;
   }
 }
 
