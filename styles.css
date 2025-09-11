@@ -10,6 +10,10 @@ html {
 
 body {
   font-size: 1.6rem !important;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 6rem; /* Add extra space at the bottom of the page */
 }
 
 /*Setting up grid view for responsiveness*/
@@ -276,7 +280,7 @@ ul {
 }
 
 .reviews-socials {
-  margin-bottom: 33vh; /* Add large bottom margin here */
+  margin-bottom: 10rem; /* Was 33vh, use a smaller value for better layout */
 }
 
 .testimonials {
@@ -305,14 +309,14 @@ hr {
 
 footer {
   margin: auto;
-  width:auto;
-  height:10rem;
+  width: auto;
   text-align: center;
   font-weight: bold;
   font-size: 1.8rem;
   background-color: white;
   padding-top: 2rem;
   border-top: 1px solid #e891af;
+  flex-shrink: 0;
 }
 
 address {
@@ -386,4 +390,8 @@ address {
   body {
     font-size: 2rem;
   }
+}
+
+main, .content, #contact, .reviews-socials {
+  flex: 1 0 auto;
 }
