@@ -13,6 +13,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-bottom: 6rem; /* Add extra space at the bottom of the page */
 }
 
 /*Setting up grid view for responsiveness*/
@@ -279,7 +280,7 @@ ul {
 }
 
 .reviews-socials {
-  margin-bottom: 4rem; /* Was 33vh, use a smaller value for better layout */
+  margin-bottom: 10rem; /* Was 33vh, use a smaller value for better layout */
 }
 
 .testimonials {
