@@ -86,7 +86,7 @@ h2 {
   overflow: hidden;
   background-color: #ddd;    
   width:100%;
-  height: 3rem; /* Set your actual navbar height */
+  height: 3.5rem; /* Set your actual navbar height */
   z-index: 1000;
   border-bottom: 1px solid #e891af;
 }
@@ -422,6 +422,6 @@ main, .content, #contact, .reviews-socials {
 }
 
 .navbar-spacer {
-  height: 3rem; /* Same as .topnav height */
+  height: 3.5rem; /* Same as .topnav height */
   width: 100%;
 }
