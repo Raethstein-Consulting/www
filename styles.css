@@ -82,7 +82,7 @@ h2 {
   top: 0;
   display:flex;
   flex-wrap: wrap;
-  justify-content: right;
+  justify-content: flex-end;
   overflow: hidden;
   background-color: #ddd;    
   width:100%;
@@ -424,4 +424,133 @@ main, .content, #contact, .reviews-socials {
 .navbar-spacer {
   height: 3.5rem; /* Same as .topnav height */
   width: 100%;
+}
+
+/* ADA Compliance Styles */
+
+.ada-toggle-btn {
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+  padding: 0.9rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.ada-toggle-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+body.ada-mode {
+  font-size: 1.8rem !important;
+  font-family: 'Calibri', sans-serif !important;
+  background: #fff;
+  color: #000;
+}
+
+body.ada-mode .topnav {
+  background-color: #000;
+  border-bottom: 2px solid #fff;
+}
+
+body.ada-mode .topnav a {
+  color: #fff;
+}
+
+body.ada-mode .topnav a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+body.ada-mode .ada-toggle-btn {
+  background: #fff;
+  color: #000;
+  border: none;
+}
+
+body.ada-mode .ada-toggle-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+body.ada-mode .logo {
+  filter: invert(1);
+}
+
+body.ada-mode .page-heading {
+  color: #000;
+  font-size: 3.5rem;
+}
+
+body.ada-mode .about {
+  background: #fff;
+  color: #000;
+}
+
+body.ada-mode #linkedin {
+  background-color: #000;
+  color: #fff;
+}
+
+body.ada-mode #linkedin a {
+  color: #fff;
+}
+
+body.ada-mode #linkedin a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+body.ada-mode .projects {
+  background-color: #000;
+  color: #fff;
+}
+
+body.ada-mode .project-tile {
+  border-top: 2px solid #fff;
+}
+
+body.ada-mode ul {
+  box-shadow: 0px 0px 5px 4px #000;
+}
+
+body.ada-mode .testimonials {
+  color: #000;
+}
+
+body.ada-mode .customer {
+  color: #000;
+}
+
+body.ada-mode footer {
+  background-color: #fff;
+  color: #000;
+  border-top: 2px solid #000;
+}
+
+body.ada-mode .email:hover {
+  color: #000;
+  text-shadow: none;
+  text-decoration: underline;
+}
+
+body.ada-mode a:focus,
+body.ada-mode button:focus {
+  outline: 3px solid #000;
+  outline-offset: 2px;
+}
+
+body.ada-mode .contact-me:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+body.ada-mode .playwrite-au-sa,
+body.ada-mode .architects-daughter-regular,
+body.ada-mode .alef-regular,
+body.ada-mode .poppins-regular,
+body.ada-mode .roboto-medium,
+body.ada-mode .roboto-thin {
+  font-family: 'Calibri', sans-serif !important;
 }
