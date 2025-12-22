@@ -18,6 +18,7 @@
       <a href="#projects" id="project">Common Projects</a>
       <a href="#testimonials">Testimonials</a>
       <a href="#contact">Contact</a>
+      <button id="ada-toggle" class="ada-toggle-btn" aria-label="Toggle ADA compliant mode">ADA Mode</button>
     </nav>
     <section id="welcome-section">
       <div class="navbar-spacer"></div>
@@ -168,5 +169,24 @@
         </section>
     </div>
 </footer>
+<script>
+  const adaToggle = document.getElementById('ada-toggle');
+  adaToggle.addEventListener('click', () => {
+    document.body.classList.toggle('ada-mode');
+    const isAda = document.body.classList.contains('ada-mode');
+    adaToggle.textContent = isAda ? 'Standard Mode' : 'ADA Mode';
+    adaToggle.setAttribute('aria-pressed', isAda);
+    localStorage.setItem('ada-mode', isAda);
+  });
+
+  // Load ADA mode from localStorage
+  if (localStorage.getItem('ada-mode') === 'true') {
+    document.body.classList.add('ada-mode');
+    adaToggle.textContent = 'Standard Mode';
+    adaToggle.setAttribute('aria-pressed', true);
+  } else {
+    adaToggle.setAttribute('aria-pressed', false);
+  }
+</script>
 </body>
 </html>
